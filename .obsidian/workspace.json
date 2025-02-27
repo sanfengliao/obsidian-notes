@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "无法实现的梦/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
-                "mode": "preview",
-                "source": true
+                "file": "chromium/blink/core/paint/FragmentData和FragmentDataList.md",
+                "mode": "source",
+                "source": false
               },
               "icon": "lucide-file",
-              "title": "通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益"
+              "title": "FragmentData和FragmentDataList"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "无法实现的梦/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
+                "file": "chromium/blink/core/paint/FragmentData和FragmentDataList.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益 的大纲"
+              "title": "FragmentData和FragmentDataList 的大纲"
             }
           }
         ],
@@ -169,23 +169,28 @@
   },
   "active": "9e4ad285941d60ba",
   "lastOpenFiles": [
+    "chromium/blink/core/layout/LayoutObject.md",
+    "chromium/blink/Paint流程.md",
     "llm-action/大模型微调.md",
-    "无所谓的东西/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
-    "无法实现的梦/assets/1739154500845.png",
-    "无法实现的梦/assets/1739154150043.png",
-    "无法实现的梦/assets/1738998605401.png",
-    "无法实现的梦/assets/1739153504712.png",
-    "无法实现的梦/assets/1738998589166.png",
-    "无法实现的梦/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
-    "无法实现的梦/assets",
-    "无法实现的梦",
-    "llm-action/大模型微调流程.md",
+    "每天都做的白日梦/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
+    "每天都做的白日梦/assets/2025-02-27-11-39-53.png",
+    "每天都做的白日梦/assets/Pasted image 20250227110353.png",
+    "每天都做的白日梦/assets/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益/2025-02-27-11-39-29.png",
+    "每天都做的白日梦/assets/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益",
+    "每天都做的白日梦/assets/Pasted image 20250227105931.png",
     "README.md",
-    "LangChain实战/images/719508/d22a491c640ca39f8125f0b9fac21806.png",
-    "LangChain实战/images/719658/28d1be62669b4f3cc01c36466bf811a4.png",
-    "LangChain实战/images/719508/7bd45d90193ab7e716a478629996f0c0.jpg",
-    "LangChain实战/images/719508/3e2a32320c85904b5fd3c508303d3307.jpg",
-    "LangChain实战/images/719508/152e3d7e34d131d3c21bfa99775b630c.jpg",
+    "LangChain实战/未命名.md",
+    "llm-action/未命名.md",
+    "assets/ParameterEfficientFineTuning.png",
+    "assets/Pasted image 20250227105618.png",
+    "无所谓的东西/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
+    "每天都做的白日梦/assets/1739154500845.png",
+    "每天都做的白日梦/assets/1739154150043.png",
+    "每天都做的白日梦/assets/1738998605401.png",
+    "每天都做的白日梦/assets/1739153504712.png",
+    "每天都做的白日梦/assets",
+    "每天都做的白日梦",
+    "llm-action/大模型微调流程.md",
     "LangChain实战/images/719658",
     "LangChain实战/images/719508",
     "LangChain实战/images/719462",
@@ -193,7 +198,6 @@
     "LangChain实战/images/718592",
     "LangChain实战/images/718402",
     "LangChain实战/images/718074",
-    "LangChain实战/images/714249",
     "LangChain实战/结课测试｜来赴一场满分之约.md",
     "LangChain实战/结束语｜人生的价值就在于创造.md",
     "LangChain实战/开篇词｜带你亲证AI应用开发的“奇点”时刻.md",
@@ -210,10 +214,6 @@
     "LangChain实战/13｜代理（下）：结构化工具对话、Self-AskwithSearch以及Planandexecute代理.md",
     "LangChain实战/12｜代理（中）：AgentExecutor究竟是怎样驱动模型和工具完成任务的？.md",
     "LangChain实战/11｜代理（上）：ReAct框架，推理与行动的协同.md",
-    "LangChain实战/10｜记忆：通过Memory记住客户上次买花时的对话细节.md",
-    "LangChain实战/09｜链（下）：想学“育花”还是“插花”？用RouterChain确定客户意图.md",
-    "LangChain实战/08｜链（上）：写一篇完美鲜花推文？用SequencialChain链接不同的组件.md",
-    "LangChain实战/07｜输出解析：用OutputParser生成鲜花推荐列表.md",
-    "LangChain实战/06｜调用模型：使用OpenAIAPI还是微调开源Llama2-ChatGLM？.md"
+    "LangChain实战/10｜记忆：通过Memory记住客户上次买花时的对话细节.md"
   ]
 }

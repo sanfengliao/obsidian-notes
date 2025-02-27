@@ -1,6 +1,6 @@
 # 入口
 
-```cpp
+```c++
 void FramePainter::Paint(GraphicsContext& context, PaintFlags paint_flags) {
   Document* document = GetFrameView().GetFrame().GetDocument();
 

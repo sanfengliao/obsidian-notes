@@ -1,5 +1,5 @@
 
-###FragmentData
+### FragmentData
 
 `FragmentData` 类表示一个布局对象的特定片段的数据。它包含了与该片段相关的各种绘制属性和状态。以下是 `FragmentData` 类的一些关键功能：
 
@@ -20,6 +20,7 @@ void LayoutBoxModelObject::CreateLayerAfterStyleChange() {
   // we need to ensure that we update paint properties.
   SetNeedsPaintPropertyUpdate();
 }
+
 
 ```
 - **StickyConstraints**: 获取和设置粘性位置滚动约束。

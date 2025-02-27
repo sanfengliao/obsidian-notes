@@ -1,4 +1,12 @@
 {
-  "attachmentFolderPath": "assets",
-  "promptDelete": false
+  "attachmentFolderPath": "./assets",
+  "promptDelete": false,
+  "alwaysUpdateLinks": true,
+  "newLinkFormat": "relative",
+  "useMarkdownLinks": true,
+  "newFileLocation": "current",
+  "uriCallbacks": false,
+  "useTab": false,
+  "showUnsupportedFiles": false,
+  "newFileFolderPath": "啦啦啦"
 }
