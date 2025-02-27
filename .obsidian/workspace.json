@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "llm-action/大模型微调.md",
+                "file": "无法实现的梦/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
                 "mode": "preview",
                 "source": true
               },
               "icon": "lucide-file",
-              "title": "大模型微调"
+              "title": "通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益"
             }
           }
         ]
@@ -140,13 +140,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "llm-action/大模型微调.md",
+                "file": "无法实现的梦/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "大模型微调 的大纲"
+              "title": "通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益 的大纲"
             }
           }
         ],
@@ -169,19 +169,23 @@
   },
   "active": "9e4ad285941d60ba",
   "lastOpenFiles": [
-    "llm-action/大模型微调流程.md",
     "llm-action/大模型微调.md",
+    "无所谓的东西/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
+    "无法实现的梦/assets/1739154500845.png",
+    "无法实现的梦/assets/1739154150043.png",
+    "无法实现的梦/assets/1738998605401.png",
+    "无法实现的梦/assets/1739153504712.png",
+    "无法实现的梦/assets/1738998589166.png",
+    "无法实现的梦/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
+    "无法实现的梦/assets",
+    "无法实现的梦",
+    "llm-action/大模型微调流程.md",
     "README.md",
     "LangChain实战/images/719508/d22a491c640ca39f8125f0b9fac21806.png",
     "LangChain实战/images/719658/28d1be62669b4f3cc01c36466bf811a4.png",
     "LangChain实战/images/719508/7bd45d90193ab7e716a478629996f0c0.jpg",
     "LangChain实战/images/719508/3e2a32320c85904b5fd3c508303d3307.jpg",
     "LangChain实战/images/719508/152e3d7e34d131d3c21bfa99775b630c.jpg",
-    "LangChain实战/images/719462/ef4e3a09a3df9776330b343e721fbe87.jpg",
-    "LangChain实战/images/719462/718fbd049acdf8681185805384028f6a.jpg",
-    "LangChain实战/images/719462/654d95bdb96e627c2464b4cedd964e87.jpg",
-    "LangChain实战/images/719462/460fa6854ffa68ef4bfa54056cb034d8.jpg",
-    "LangChain实战/images/719462/28d3c772116bf4733ed55e937e476d26.jpg",
     "LangChain实战/images/719658",
     "LangChain实战/images/719508",
     "LangChain实战/images/719462",
@@ -190,8 +194,6 @@
     "LangChain实战/images/718402",
     "LangChain实战/images/718074",
     "LangChain实战/images/714249",
-    "LangChain实战/images/713685",
-    "LangChain实战/images/713462",
     "LangChain实战/结课测试｜来赴一场满分之约.md",
     "LangChain实战/结束语｜人生的价值就在于创造.md",
     "LangChain实战/开篇词｜带你亲证AI应用开发的“奇点”时刻.md",
@@ -212,8 +214,6 @@
     "LangChain实战/09｜链（下）：想学“育花”还是“插花”？用RouterChain确定客户意图.md",
     "LangChain实战/08｜链（上）：写一篇完美鲜花推文？用SequencialChain链接不同的组件.md",
     "LangChain实战/07｜输出解析：用OutputParser生成鲜花推荐列表.md",
-    "LangChain实战/06｜调用模型：使用OpenAIAPI还是微调开源Llama2-ChatGLM？.md",
-    "LangChain实战/05｜提示工程（下）：用思维链和思维树提升模型思考质量.md",
-    "LangChain实战/04｜提示工程（上）：用少样本FewShotTemplate和ExampleSelector创建应景文案.md"
+    "LangChain实战/06｜调用模型：使用OpenAIAPI还是微调开源Llama2-ChatGLM？.md"
   ]
 }
