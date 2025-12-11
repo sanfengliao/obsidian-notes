@@ -4,21 +4,17 @@
     "type": "split",
     "children": [
       {
-        "id": "415deb075a9f512d",
+        "id": "daebd24e1cea88fc",
         "type": "tabs",
         "children": [
           {
-            "id": "64d08809d06e23b6",
+            "id": "187a28bd0e56f4b4",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "univer/Univer实例创建和插件注册逻辑.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Univer实例创建和插件注册逻辑"
+              "title": "New tab"
             }
           }
         ]
@@ -44,7 +40,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "文件列表"
+              "title": "Files"
             }
           },
           {
@@ -61,7 +57,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜索"
             }
           },
           {
@@ -71,7 +67,7 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "书签"
             }
           }
         ]
@@ -140,13 +136,12 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "univer/Univer实例创建和插件注册逻辑.md",
                 "followCursor": false,
                 "showSearch": true,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Univer实例创建和插件注册逻辑 的大纲"
+              "title": "Outline"
             }
           },
           {
@@ -155,8 +150,8 @@
             "state": {
               "type": "git-view",
               "state": {},
-              "icon": "git-pull-request",
-              "title": "Source Control"
+              "icon": "lucide-ghost",
+              "title": "git-view"
             }
           }
         ],
@@ -168,62 +163,65 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:打开快速切换": false,
-      "graph:查看关系图谱": false,
-      "canvas:新建白板": false,
-      "daily-notes:打开/创建今天的日记": false,
-      "templates:插入模板": false,
-      "command-palette:打开命令面板": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false,
+      "obsidian-excalidraw-plugin:New drawing": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "64d08809d06e23b6",
+  "active": "187a28bd0e56f4b4",
   "lastOpenFiles": [
-    "private/LangChain实战/01｜LangChain系统安装和快速入门.md",
-    "private/LangChain实战/02｜用LangChain快速构建基于“易速鲜花”本地知识库的智能问答系统.pdf",
-    "llm-action/LLM大模型项目.md",
-    "llm-action/好用的MCP市场.md",
-    "llm-action/Multi-Head Attention.md",
+    "private/atum/ios/KG-Atum-iOS启动流程深度解析.md",
+    "tencent/atum/ios/atum-js-runtime iOS核心引擎系统详解.md",
+    "tencent/atum/ios/Native能力绑定系统深度分析.md",
+    "tencent/atum/ios/KG-Atum-iOS启动流程深度解析.md",
+    "tencent/atum/ios/ATMBindingRuntime绑定流程图.md",
+    "tencent/atum/ios/2-MBEnvRuntime 初始化流程.md",
+    "tencent/atum/ios/1-初始化流程.md",
+    "tencent/Hippy/Hippy常用类.md",
+    "tencent/atum/ios",
+    "tencent/Hippy",
+    "tencent/atum",
+    "tencent",
     "private/tencent/未命名.md",
-    "private/LangChain实战/04｜提示工程（上）：用少样本FewShotTemplate和ExampleSelector创建应景文案.md",
-    "private/LangChain实战/06｜调用模型：使用OpenAIAPI还是微调开源Llama2-ChatGLM？.md",
-    "private/LangChain实战/02｜用LangChain快速构建基于“易速鲜花”本地知识库的智能问答系统.md",
-    "private/Hippy/Hippy常用类.md",
-    "private/Hippy",
-    "private",
-    "private/tencent",
+    "private/atum/ios/atum-js-runtime iOS核心引擎系统详解.md",
+    "private/atum/ios/ATMBindingRuntime绑定流程图.md",
+    "private/atum/ios/1-初始化流程.md",
+    "private/atum/ios/2-MBEnvRuntime 初始化流程.md",
     "README.md",
-    "llm-action/大模型微调.md",
-    "univer/Univer实例创建和插件注册逻辑.md",
-    "univer",
-    "lynx/ChunkLoadingRspackPluginImpl.md",
-    "chromium/blink/core/paint/FragmentData和FragmentDataList.md",
-    "chromium/blink/core/paint/assets/1739187878046.png",
-    "chromium/blink/core/layout/LayoutObject.md",
-    "private/LangChain实战/03｜模型I-O：输入提示、调用模型、解析输出.md",
-    "lynx/pluginReactLynx.md",
-    "lynx/applyEntry.md",
-    "lynx/applyLoaders.md",
-    "lynx/applyCSS.md",
-    "lynx/rspeedy.md",
-    "每天都做的白日梦/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
-    "lynx",
-    "llm-action/大模型微调参考文章.md",
-    "llm-action/大模型基本结构.md",
-    "llm-action/Transformer架构.md",
     "未命名.canvas",
-    "每天都做的白日梦/assets/2025-02-27-11-39-53.png",
-    "每天都做的白日梦/assets/Pasted image 20250227110353.png",
-    "每天都做的白日梦/assets/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益/2025-02-27-11-39-29.png",
-    "每天都做的白日梦/assets/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益",
-    "每天都做的白日梦/assets/Pasted image 20250227105931.png",
+    "Drawing 2025-12-09 14.08.47.excalidraw.md",
+    "univer/Univer实例创建和插件注册逻辑.md",
+    "Excalidraw/Drawing 2025-05-18 17.35.03.excalidraw.md",
+    "chromium/blink/core/dom/document/ViewportDefiningElement 函数.md",
+    "private/atum/ios/Native能力绑定系统深度分析.md",
+    "private/atum/ios/MBEnvRuntime 初始化流程.md",
+    "private/atum/ios/update_headers_v2.py",
+    "private/atum/ios/update_headers.py",
+    "每天都做的白日梦/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
+    "private/atum/ios",
+    "private/atum",
+    "chromium/Chromium开发环境搭建.md",
+    "chromium/assets/2025-10-23-21-32-55.png",
+    "chromium/assets/2025-10-23-21-30-02.png",
+    "chromium/assets/2025-10-23-21-25-56.png",
+    "chromium/assets/2025-10-23-21-16-56.png",
+    "chromium/assets/2025-10-23-21-05-36.png",
+    "chromium/assets/2025-10-23-20-55-20.png",
+    "chromium/assets/2025-10-23-20-53-31.png",
     "assets/ParameterEfficientFineTuning.png",
-    "assets/Pasted image 20250227105618.png",
-    "每天都做的白日梦/assets/1739154500845.png",
-    "每天都做的白日梦/assets/1739154150043.png",
-    "每天都做的白日梦/assets/1738998605401.png",
-    "每天都做的白日梦/assets",
-    "每天都做的白日梦",
-    "private/LangChain实战/images/719658"
+    "chromium/assets",
+    "chromium/blink/core/layout/layout_result/IsSelfCollapsing.md",
+    "chromium/blink/core/layout/block_layout/未命名.md",
+    "chromium/LayoutNG block fragmentation.md",
+    "llm-action/一些prompt.md",
+    "chromium/blink/core/layout/layout_result",
+    "chromium/blink/core/paint/assets/1739187878046.png",
+    "每天都做的白日梦/assets/2025-02-27-11-39-53.png"
   ]
 }

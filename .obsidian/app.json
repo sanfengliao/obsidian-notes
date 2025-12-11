@@ -8,5 +8,7 @@
   "uriCallbacks": false,
   "useTab": false,
   "showUnsupportedFiles": false,
-  "newFileFolderPath": "啦啦啦"
+  "newFileFolderPath": "啦啦啦",
+  "showLineNumber": false,
+  "tabSize": 2
 }
