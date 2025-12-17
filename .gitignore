@@ -1,3 +1,7 @@
 Hippy/
 private/
 tencent/
+node_modules/
+dist/
+
+*.ts

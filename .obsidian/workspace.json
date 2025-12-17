@@ -4,11 +4,11 @@
     "type": "split",
     "children": [
       {
-        "id": "daebd24e1cea88fc",
+        "id": "ce5ce34043b3b0a1",
         "type": "tabs",
         "children": [
           {
-            "id": "187a28bd0e56f4b4",
+            "id": "f831a84607cd1cd1",
             "type": "leaf",
             "state": {
               "type": "empty",
@@ -74,7 +74,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 294.5
+    "width": 266.40000000000003
   },
   "right": {
     "id": "b586263c07a7acd7",
@@ -159,7 +159,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,54 +175,34 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "187a28bd0e56f4b4",
+  "active": "dc12930ea8f516b5",
   "lastOpenFiles": [
-    "private/atum/ios/KG-Atum-iOS启动流程深度解析.md",
-    "tencent/atum/ios/atum-js-runtime iOS核心引擎系统详解.md",
-    "tencent/atum/ios/Native能力绑定系统深度分析.md",
-    "tencent/atum/ios/KG-Atum-iOS启动流程深度解析.md",
-    "tencent/atum/ios/ATMBindingRuntime绑定流程图.md",
-    "tencent/atum/ios/2-MBEnvRuntime 初始化流程.md",
-    "tencent/atum/ios/1-初始化流程.md",
-    "tencent/Hippy/Hippy常用类.md",
-    "tencent/atum/ios",
-    "tencent/Hippy",
-    "tencent/atum",
-    "tencent",
-    "private/tencent/未命名.md",
-    "private/atum/ios/atum-js-runtime iOS核心引擎系统详解.md",
-    "private/atum/ios/ATMBindingRuntime绑定流程图.md",
-    "private/atum/ios/1-初始化流程.md",
-    "private/atum/ios/2-MBEnvRuntime 初始化流程.md",
+    "chromium/blink/core/layout/block_layout/未命名.md",
+    "chromium/blink/core/layout/block_layout/BlockLayoutAlgorithm.md",
+    "每天都做的白日梦/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
+    "2025-12-17.md",
+    "assets/1738998605401.png",
+    "assets/1738998589166.png",
+    "univer/Univer实例创建和插件注册逻辑.md",
+    "assets/2025-12-17-21-42-03.png",
+    "assets/2025-12-17-21-41-07.png",
     "README.md",
+    "assets/1739187878046.png",
+    "chromium/blink/core/paint/FragmentData和FragmentDataList.md",
+
+    "assets/2025-12-11-14-53-22.png",
+    "chromium/Chromium开发环境搭建.md",
+    "assets/2025-10-23-20-55-20.png",
+    "assets/2025-10-23-20-53-31.png",
+    "assets/2025-12-17-21-26-01.png",
+    "assets/2025-12-17-21-38-07.png",
+    "chromium/blink/Paint流程.md",
+    "chromium/blink/assets",
+    "chromium/blink/core/layout/block_layout/CalculateMargins 函数详细解析.md",
+    "chromium/blink/core/dom/document/ViewportDefiningElement 函数.md",
     "未命名.canvas",
     "Drawing 2025-12-09 14.08.47.excalidraw.md",
-    "univer/Univer实例创建和插件注册逻辑.md",
     "Excalidraw/Drawing 2025-05-18 17.35.03.excalidraw.md",
-    "chromium/blink/core/dom/document/ViewportDefiningElement 函数.md",
-    "private/atum/ios/Native能力绑定系统深度分析.md",
-    "private/atum/ios/MBEnvRuntime 初始化流程.md",
-    "private/atum/ios/update_headers_v2.py",
-    "private/atum/ios/update_headers.py",
-    "每天都做的白日梦/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
-    "private/atum/ios",
-    "private/atum",
-    "chromium/Chromium开发环境搭建.md",
-    "chromium/assets/2025-10-23-21-32-55.png",
-    "chromium/assets/2025-10-23-21-30-02.png",
-    "chromium/assets/2025-10-23-21-25-56.png",
-    "chromium/assets/2025-10-23-21-16-56.png",
-    "chromium/assets/2025-10-23-21-05-36.png",
-    "chromium/assets/2025-10-23-20-55-20.png",
-    "chromium/assets/2025-10-23-20-53-31.png",
-    "assets/ParameterEfficientFineTuning.png",
-    "chromium/assets",
-    "chromium/blink/core/layout/layout_result/IsSelfCollapsing.md",
-    "chromium/blink/core/layout/block_layout/未命名.md",
-    "chromium/LayoutNG block fragmentation.md",
-    "llm-action/一些prompt.md",
-    "chromium/blink/core/layout/layout_result",
-    "chromium/blink/core/paint/assets/1739187878046.png",
-    "每天都做的白日梦/assets/2025-02-27-11-39-53.png"
+    "chromium/assets"
   ]
 }

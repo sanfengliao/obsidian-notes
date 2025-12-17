@@ -1,4 +1,6 @@
+
 # 入口
+
 
 ```c++
 void FramePainter::Paint(GraphicsContext& context, PaintFlags paint_flags) {
