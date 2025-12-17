@@ -2,5 +2,6 @@
   "obsidian-git",
   "obsidian-excalidraw-plugin",
   "obsidian-custom-attachment-location",
-  "obsidian-image-auto-upload-plugin"
+  "obsidian-image-auto-upload-plugin",
+  "obsidian-image-upload-plugin"
 ]
