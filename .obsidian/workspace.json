@@ -4,21 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "2ed42ca0a74b430d",
+        "id": "a0d7d76073ea7beb",
         "type": "tabs",
         "children": [
           {
-            "id": "547f1725c7812b71",
+            "id": "7bb6f8df6f48d95f",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "README.md",
+                "file": "chromium/blink/core/intersection_observer/IntersectionGeometry-ComputeGeometry.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "README"
+              "title": "IntersectionGeometry-ComputeGeometry"
             }
           }
         ]
@@ -44,7 +44,7 @@
                 "autoReveal": false
               },
               "icon": "lucide-folder-closed",
-              "title": "Files"
+              "title": "文件列表"
             }
           },
           {
@@ -71,7 +71,7 @@
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "书签"
+              "title": "Bookmarks"
             }
           }
         ]
@@ -168,66 +168,65 @@
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Open quick switcher": false,
-      "graph:Open graph view": false,
-      "canvas:Create new canvas": false,
-      "daily-notes:Open today's daily note": false,
-      "templates:Insert template": false,
-      "command-palette:Open command palette": false,
-      "bases:Create new base": false,
-      "obsidian-excalidraw-plugin:New drawing": false,
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "bases:创建新数据库": false,
+      "obsidian-excalidraw-plugin:新建绘图文件": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "547f1725c7812b71",
+  "active": "7bb6f8df6f48d95f",
   "lastOpenFiles": [
-    "assets/2025-12-18-00-11-56.png",
-    "assets/2025-12-17-22-40-27.png",
-    "assets/2025-12-17-22-31-44.png",
-    "assets/2025-12-17-22-22-16.png",
-    "assets/2025-12-17-22-22-02.png",
-    "Excalidraw/Drawing 2025-12-17 22.21.48.excalidraw.md",
-    "Excalidraw",
-    "Untitled.base",
-    "2025-12-17.md",
-    "Untitled.canvas",
     "README.md",
-    "assets/2025-12-17-22-20-31.png",
-    "assets/2025-12-17-22-19-55.png",
-    "assets/2025-12-17-22-19-37.png",
-    "assets/2025-12-17-22-16-09.png",
-    "assets/2025-12-17-22-15-19.png",
-    "chromium/blink/core/layout/block_layout/未命名.md",
-    "chromium/blink/core/layout/block_layout/BlockLayoutAlgorithm.md",
-    "每天都做的白日梦/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
-    "assets/1738998605401.png",
-    "univer/Univer实例创建和插件注册逻辑.md",
-    "chromium/blink/core/paint/FragmentData和FragmentDataList.md",
-    "tencent/atum/ios/Native能力绑定系统深度分析.md",
-    "tencent/atum/ios/atum-js-runtime iOS核心引擎系统详解.md",
-    "tencent/atum/ios/2-MBEnvRuntime 初始化流程.md",
-    "tencent/atum/ios/1-初始化流程.md",
+    "assets/2025-12-22-00-40-56.png",
     "chromium/Chromium开发环境搭建.md",
-    "chromium/blink/Paint流程.md",
-    "chromium/blink/assets",
-    "chromium/blink/core/layout/block_layout/CalculateMargins 函数详细解析.md",
+    "test.md",
+    "atum/ios/1-初始化流程.md",
+    "chromium/blink/core/intersection_observer/IntersectionGeometry-ComputeGeometry.md",
+    "atum/ios/atum-js-runtime iOS核心引擎系统详解.md",
+    "atum/ios/Native能力绑定系统深度分析.md",
+    "atum/ios/KG-Atum-iOS启动流程深度解析.md",
+    "atum/ios/ATMBindingRuntime绑定流程图.md",
+    "atum/ios/2-MBEnvRuntime 初始化流程.md",
+    "atum/ios",
+    "atum",
+    "assets/2025-12-21-10-05-37.png",
+    "assets/2025-12-21-03-59-27.png",
+    "assets/2025-12-21-03-09-27.png",
     "chromium/blink/core/dom/document/ViewportDefiningElement 函数.md",
-    "private/atum/ios/KG-Atum-iOS启动流程深度解析.md",
-    "tencent/atum/ios/KG-Atum-iOS启动流程深度解析.md",
-    "tencent/atum/ios/ATMBindingRuntime绑定流程图.md",
-    "tencent/Hippy/Hippy常用类.md",
+    "assets/2025-12-21-00-51-38.png",
+    "assets/2025-12-21-00-36-32.png",
+    "assets/2025-12-21-00-36-02.png",
+    "assets/2025-12-21-00-28-37.png",
+    "assets/2025-12-21-00-28-00.png",
+    "每天都做的白日梦/通过国际合作可持续发展全球蓝碳，以缓解气候变化并获取经济效益.md",
+    "chromium/blink/core/layout/block_layout/CalculateMargins 函数详细解析.md",
+    "chromium/blink/core/layout/block_layout/BlockLayoutAlgorithm.md",
+    "chromium/blink/core/layout/LayoutObject.md",
+    "chromium/blink/core/layout/Layout流程.md",
+    "lynx/applyCSS.md",
+    "Excalidraw/Drawing 2025-12-20 22.46.13.excalidraw.md",
+    "Excalidraw",
+    "Excalidraw/Drawing 2025-12-17 22.21.48.excalidraw.md",
+    "chromium/blink/core/layout/block_layout/Untitled.base",
+    "chromium/blink/core/layout/block_layout/ComputeChildData方法详细解析.md",
+    "chromium/blink/core/layout/block_layout/未命名.md",
+    "llm-action/大模型基本结构.md",
+    "llm-action/LLM大模型项目.md",
+    "chromium/blink/core/layout/length_utils/ComputeInlineSizeForFragment方法详解.md",
+    "chromium/blink/core/layout/length_utils/ComputeBlockSizeForFragment 函数详解.md",
+    "chromium/blink/core/intersection_observer",
+    "Untitled",
+    "github",
+    "assets/2025-12-18-00-11-56.png",
+    "Untitled.base",
+    "Untitled.canvas",
+    "chromium/blink/assets",
     "tencent/atum/ios",
-    "tencent/Hippy",
-    "tencent/atum",
-    "tencent",
-    "private/tencent/未命名.md",
-    "private/atum/ios/atum-js-runtime iOS核心引擎系统详解.md",
-    "private/atum/ios/ATMBindingRuntime绑定流程图.md",
-    "private/atum/ios/1-初始化流程.md",
-    "private/atum/ios/2-MBEnvRuntime 初始化流程.md",
-    "未命名.canvas",
-    "private/atum/ios/update_headers_v2.py",
-    "private/atum/ios/update_headers.py",
-    "private/atum/ios"
+    "未命名.canvas"
   ]
 }

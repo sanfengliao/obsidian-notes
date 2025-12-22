@@ -3,5 +3,8 @@
   "obsidian-excalidraw-plugin",
   "obsidian-custom-attachment-location",
   "obsidian-image-auto-upload-plugin",
-  "obsidian-image-upload-plugin"
+  "obsidian-image-upload-plugin",
+  "hot-reload",
+  "sample-plugin",
+  "copy-plus"
 ]

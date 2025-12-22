@@ -1,7 +1,4 @@
-
-
 `applyCSS` 函数是 `pluginReactLynx` 插件中的核心组件之一，负责配置和优化 Lynx 应用中的 CSS 处理流程。这个函数实现了多种 CSS 相关特性，包括 CSS 模块化、作用域控制、选择器优化等。下面将详细解析其工作原理和实现细节。
-
 ## 函数概述
 
 ```typescript
@@ -12,11 +9,9 @@ export function applyCSS(
   // 函数实现...
 }
 ```
-
 `applyCSS` 接收两个参数：
 - `api`：Rsbuild 插件 API，用于修改构建配置
 - `options`：插件选项，包含 CSS 相关的配置项
-
 ## 关键配置提取
 
 函数首先从选项中提取关键的 CSS 配置：
@@ -216,7 +211,6 @@ export const normalizeCssLoaderOptions = (
 ```
 
 这个函数主要处理 CSS 模块的 `exportOnlyLocals` 选项，确保在主线程中 CSS 加载器只导出本地标识符映射，而不生成实际的 CSS 代码。
-
 # 总结
 
 `applyCSS` 函数是 Lynx 框架中处理 CSS 的核心组件，它通过精细的配置和优化，实现了 Lynx 环境中的 CSS 模块化、作用域控制和选择器增强等特性。函数采用分层处理策略，为主线程和后台线程提供不同的 CSS 处理逻辑，并通过自定义插件和加载器，确保 CSS 在 Lynx 环境中高效运行。

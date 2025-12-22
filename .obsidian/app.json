@@ -10,5 +10,8 @@
   "showUnsupportedFiles": false,
   "newFileFolderPath": "啦啦啦",
   "showLineNumber": false,
-  "tabSize": 2
+  "tabSize": 2,
+  "propertiesInDocument": "visible",
+  "livePreview": true,
+  "strictLineBreaks": false
 }

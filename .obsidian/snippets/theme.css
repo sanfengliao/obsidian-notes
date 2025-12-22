@@ -1,0 +1,43 @@
+/*
+
+This CSS file will be included with your plugin, and
+available in the app when your plugin is enabled.
+
+If your plugin does not need CSS, delete this file.
+
+*/
+
+
+.markdown-rendered p, .markdown-rendered ul, .markdown-rendered ol {
+  margin: 8px 0;
+}
+
+
+.markdown-source-view.mod-cm6 .cm-content > *:not(.HyperMD-codeblock) {
+  margin: 8px 0 !important;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-list-line-nobullet .cm-hmd-list-indent .cm-indent {
+	min-width: 32px;
+}
+
+.markdown-source-view.mod-cm6 .HyperMD-list-line-nobullet .cm-hmd-list-indent .cm-indent:last-child {
+	min-width: 23px;
+} 
+
+
+
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-header-1 {
+  font-size: 26px !important;
+}
+
+.markdown-rendered h2, .markdown-source-view.mod-cm6 .cm-content .HyperMD-header-2 {
+  font-size: 22px !important;
+
+}
+
+.markdown-rendered h3, .markdown-source-view.mod-cm6 .cm-content .HyperMD-header-3 {
+
+  font-size: 20px !important;
+
+}

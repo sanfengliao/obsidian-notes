@@ -1,0 +1,9 @@
+{
+	"id": "copy-plus",
+	"name": "Copy Plus",
+	"version": "1.0.0",
+	"minAppVersion": "0.15.0",
+	"description": "Demonstrates some of the capabilities of the Obsidian API.",
+	"author": "sanfordliao",
+	"isDesktopOnly": false
+}
