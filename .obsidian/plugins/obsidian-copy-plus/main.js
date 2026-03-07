@@ -505,11 +505,10 @@ var DocumentRenderer = class {
         }
       }
     });
-    this.modal.progress.max = 100;
     await allWithProgress(
       promises,
-      // @ts-ignore
-      (percentCompleted) => this.modal.progress.value = percentCompleted
+      (percentCompleted) => {
+      }
     );
     return node;
   }
@@ -857,8 +856,7 @@ var CopyDocumentAsHTMLPlugin = class extends import_obsidian.Plugin {
       const htmlDocument = htmlBody.outerHTML;
       const data = new ClipboardItem({
         "text/html": new Blob([htmlDocument], {
-          // @ts-ignore
-          type: ["text/html", "text/plain"]
+          type: "text/html"
         }),
         "text/plain": new Blob([markdown], {
           type: "text/plain"

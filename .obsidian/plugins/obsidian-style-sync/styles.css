@@ -1,0 +1,147 @@
+
+
+.inline-title:not([data-level])  {
+  font-size: 30px;
+  margin-block-end: 0;
+}
+
+
+
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-list-line:has(+ .cm-line:not([class*="HyperMD-list-line"])) {
+  margin-bottom: 0 !important;
+}
+
+
+
+
+.mermaid svg {
+  width: 100%;
+  height: auto;
+}
+
+body {
+  --line-width: 57rem;
+  --h1-size: 26px;
+  --h2-size: 22px;
+  --h3-size: 20px;
+  --h4-size: 18px;
+  --h5-size: 16px;
+  --h6-size: 16px;
+  --table-column-last-border-width: 1px;
+  --table-header-border-width: 1px;
+  --table-column-first-border-width: 1px;
+  --table-row-last-border-width: 1px;
+}
+
+
+/* code block start */
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-codeblock-begin, .markdown-rendered .el-pre {
+  margin-top: 16px !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-codeblock.HyperMD-codeblock-begin, .markdown-source-view.mod-cm6 .cm-content .HyperMD-codeblock.HyperMD-codeblock-end {
+  height: 20px;
+}
+
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-codeblock {
+  height: 25px;
+}
+
+.markdown-rendered pre code {
+  line-height: 24px;
+}
+
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-codeblock-end, .markdown-rendered .el-pre {
+  margin-bottom: 16px !important;
+}
+
+
+
+.markdown-rendered pre {
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+/* code block end */
+
+/* header style start*/
+
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-header-1  {
+  padding-top: 26px !important;
+  padding-bottom: 10px !important;
+}
+
+.markdown-rendered .el-h1 h1 {
+  margin-top: 26px !important;
+  margin-bottom: 10px !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-header-2 {
+  padding-top: 22px !important;
+  padding-bottom: 8px !important;
+}
+
+.markdown-rendered .el-h2 h2 {
+  margin-top: 22px !important;
+  margin-bottom: 8px !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-header-3 {
+  padding-top: 20px !important;
+  padding-bottom: 8px !important;
+}
+
+.markdown-rendered .el-h3 h3 {
+  margin-top: 20px !important;
+  margin-bottom: 8px !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-header-4 {
+  padding-top: 18px !important;
+  padding-bottom: 8px !important;
+}
+
+.markdown-rendered .el-h4 h4 {
+  margin-top: 18px !important;
+  margin-bottom: 8px !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-header-5 {
+  padding-top: 18px !important;
+  padding-bottom: 8px !important;
+}
+
+.markdown-rendered .el-h5 h5 {
+  margin-top: 18px !important;
+  margin-bottom: 8px !important;
+}
+
+.markdown-source-view.mod-cm6 .cm-content .HyperMD-header-6 {
+  padding-top: 16px !important;
+  padding-bottom: 8px !important;
+}
+
+.markdown-rendered .el-h6 h6 {
+  margin-top: 16px !important;
+  margin-bottom: 8px !important;
+}
+
+
+/* header style end*/
+
+/* p, ul, ol style start */
+.markdown-rendered .el-p p, .markdown-rendered ul, .markdown-rendered ol  {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.markdown-rendered .el-p:has(+ .el-p) p, .markdown-rendered ul, .markdown-rendered ol   {
+  margin-bottom: 24px;
+}
+
+/* list indent for cm-line after HyperMD-list-line */
+.cm-line.style-sync-list-indent {
+  padding-inline-start: var(--list-indent) !important;
+}
+
+

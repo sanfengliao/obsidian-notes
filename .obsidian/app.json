@@ -11,7 +11,10 @@
   "newFileFolderPath": "啦啦啦",
   "showLineNumber": false,
   "tabSize": 2,
-  "propertiesInDocument": "visible",
+  "propertiesInDocument": "source",
   "livePreview": true,
-  "strictLineBreaks": false
+  "strictLineBreaks": false,
+  "foldIndent": false,
+  "showIndentGuide": false,
+  "spellcheck": false
 }
