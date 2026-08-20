@@ -1,13 +1,16 @@
+---
+_organized: true
+---
 # Chromium Flex 布局算法分析
 
-通过 Chromium 源码（flex_layout_algorithm.cc、line_flexer.cc）深入了解 CSS Flexbox 从规范到实现的完整过程。
+通过 Chromium 源码（flex*layout*algorithm.cc、line\_flexer.cc）深入了解 CSS Flexbox 从规范到实现的完整过程。
 
 ## 整体流程
 
 Flex 容器的布局完整流程可以分为两个主要阶段：
 
 ```cpp
-// flex_layout_algorithm.cc:1182
+// flex_layout_algorithm.cc
 const LayoutResult* FlexLayoutAlgorithm::LayoutInternal() {
   // 防止滚条状态变化导致重排循环
   if (ignore_child_scrollbar_changes_)
@@ -28,7 +31,7 @@ const LayoutResult* FlexLayoutAlgorithm::LayoutInternal() {
 ### 绝对定位元素的处理
 
 ```cpp
-// flex_layout_algorithm.cc:810-818
+// flex_layout_algorithm.cc
 for (BlockNode child = iterator.NextChild(); child;
      child = iterator.NextChild()) {
   if (child.IsOutOfFlowPositioned()) {
@@ -46,7 +49,7 @@ for (BlockNode child = iterator.NextChild(); child;
 flex-basis 的优先级很清晰。首先检查 flex-basis 是否为 auto，如果是则回退到 width/height，最后才使用内容尺寸。
 
 ```cpp
-// flex_layout_algorithm.cc:983-1027
+// flex_layout_algorithm.cc
 const LayoutUnit flex_base_border_box = ([&]() -> LayoutUnit {
   if (flex_basis.HasAuto()) {
     // 检查 width/height 属性
@@ -69,6 +72,7 @@ const LayoutUnit flex_base_border_box = ([&]() -> LayoutUnit {
 ```
 
 关键的是 `resolve_main_length` 闭包，它处理三种情况：
+
 - 具体长度（200px）：直接使用
 - 百分比（50%）：相对容器主轴尺寸计算
 - auto/content：调用 `MinMaxSizesFunc` 获取内容的 min-content 尺寸
@@ -80,7 +84,7 @@ const LayoutUnit flex_base_border_box = ([&]() -> LayoutUnit {
 规范定义 flex items 的默认 `min-width: auto`（而非 0），这防止内容溢出：
 
 ```cpp
-// flex_layout_algorithm.cc:1037-1089
+// flex_layout_algorithm.cc
 std::optional<Length> auto_min_length;
 if (ShouldApplyAutoMinSize(child)) {
   LayoutUnit content_size_suggestion = ...;    // min-content 尺寸
@@ -108,6 +112,7 @@ hypothetical_main_size = clamp(flex_base_size, min_main_size, max_main_size)
 ```
 
 最后一步是应用 min/max 约束。这对应 W3C 规范 Section 9.2.3.E，公式是 `clamp(flex_base_size, min_main_size, max_main_size)`。应用约束后，FlexItem 的核心字段就都有值了：
+
 - `base_content_size`：flex base size（border-box）
 - `hypothetical_content_size`：应用 min/max 后的尺寸
 - `flex_grow / flex_shrink`：弹性因子
@@ -150,7 +155,7 @@ for (auto& item : items) {
 在初始化时就要识别出哪些 items 无法改变，直接冻结它们：
 
 ```cpp
-// line_flexer.cc:9-41
+// line_flexer.cc
 LineFlexer::LineFlexer(base::span<FlexItem> line_items, ...)
     : mode_(sum_hypothetical_main_size < main_axis_inner_size ? kGrow
                                                               : kShrink) {
@@ -174,7 +179,7 @@ LineFlexer::LineFlexer(base::span<FlexItem> line_items, ...)
 ### 核心迭代：ResolveFlexibleLengths
 
 ```cpp
-// line_flexer.cc:139-169
+// line_flexer.cc
 bool LineFlexer::ResolveFlexibleLengths() {
   // 处理 flex-factor < 1 的情况：只分配比例空间
   if (total_flex_factor_ > 0.0 && total_flex_factor_ < 1.0) {
@@ -242,6 +247,7 @@ bool LineFlexer::ResolveFlexibleLengths() {
 这是避免浮点累积误差的技巧。最后一个 item 获得剩余的所有空间，保证总和精确。
 
 例如 100px 分配给 3 个 flex-grow: 1 的 items，从后向前分配的过程是：
+
 - 第 3 个：100 × 1/3 = 33px，剩余 67px
 - 第 2 个：67 × 1/2 = 34px，剩余 33px
 - 第 1 个：33 × 1 = 33px，完全消耗
@@ -254,7 +260,7 @@ bool LineFlexer::ResolveFlexibleLengths() {
 增长模式按 `flex-grow` 比例分配，收缩模式按 `flex-shrink × base_size` 比例分配：
 
 ```cpp
-// line_flexer.cc:633-642
+// line_flexer.cc
 if (mode_ == kGrow) {
   item.free_space_fraction = flex_factor / total_flex_factor_;
 } else {
@@ -275,11 +281,13 @@ if (mode_ == kGrow) {
 ### 具体例子
 
 容器宽度 400px，三个 items：
+
 - A: `flex: 1 1 100px; min-width: 80px`
 - B: `flex: 2 1 100px`
 - C: `flex: 1 1 100px; max-width: 120px`
 
 **第一轮：**
+
 ```
 总 hypothetical size = 300px
 剩余空间 = 400 - 300 = 100px
@@ -295,6 +303,7 @@ if (mode_ == kGrow) {
 ```
 
 **第二轮：**
+
 ```
 剩余空间 = 400 - 125 - 150 - 120 = 5px
 只有 A、B 参与，总 flex-grow = 3
@@ -315,7 +324,7 @@ if (mode_ == kGrow) {
 ### 主轴对齐（justify-content）
 
 ```cpp
-// flex_layout_algorithm.cc:1548-1601
+// flex_layout_algorithm.cc
 LayoutUnit InitialContentPositionOffset(const StyleContentAlignmentData& data,
                                        LayoutUnit free_space,
                                        unsigned number_of_items) {
@@ -345,7 +354,7 @@ LayoutUnit InitialContentPositionOffset(const StyleContentAlignmentData& data,
 交叉轴上的 auto margin 优先级最高，吃掉所有剩余空间：
 
 ```cpp
-// flex_layout_algorithm.cc:1051-1060
+// flex_layout_algorithm.cc
 const LayoutUnit margin_space = cross_axis_space.ClampNegativeToZero();
 if (is_margin_auto.CrossStart() && is_margin_auto.CrossEnd()) {
   // 两侧都 auto：居中
@@ -367,7 +376,7 @@ if (is_margin_auto.CrossStart() && is_margin_auto.CrossEnd()) {
 Baseline 对齐是对齐中最复杂的部分。规范定义了两组 baseline（major/minor），还要处理 writing mode、wrap-reverse 等各种情况。核心逻辑是计算行内最大 ascent，然后让每个 item 的 ascent 与之对齐。
 
 ```cpp
-// flex_layout_algorithm.cc:1097-1111
+// flex_layout_algorithm.cc
 case ItemPosition::kBaseline: {
   const bool is_major = item.baseline_group == BaselineGroup::kMajor;
   const LayoutUnit ascent = BaselineAscent(item, physical_fragment);
@@ -400,7 +409,7 @@ auto_min_size = min(content_size_suggestion, specified_size_suggestion);
 **A:** Column flex 的高度通常是 indefinite（由内容决定），百分比相对 indefinite 无法解析。
 
 ```cpp
-// flex_layout_algorithm.cc:1318-1321
+// flex_layout_algorithm.cc
 const bool is_initial_block_size_indefinite =
     is_column_ && !is_main_axis_inline_axis &&
     ChildAvailableSize().block_size == kIndefiniteSize &&
@@ -438,7 +447,7 @@ if (total_flex_factor_ < 1.0) {
 Chromium 用模板类 `PhysicalToFlex` 处理 row/column 的坐标差异：
 
 ```cpp
-// flex_layout_algorithm.cc:50-80
+// flex_layout_algorithm.cc
 template <typename Value>
 class PhysicalToFlex {
   Value MainStart() const {

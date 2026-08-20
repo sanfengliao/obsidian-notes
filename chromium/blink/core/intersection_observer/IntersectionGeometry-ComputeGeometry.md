@@ -1,13 +1,18 @@
 `IntersectionObserver` 的核心能力是判断一个元素与另一个元素（或 viewport）的交集比例。听起来简单——两个矩形求交集嘛。但实际实现要处理的问题远比这复杂：元素可能有 CSS transform、可能嵌套在多层滚动容器里、可能跨 iframe、可能是 SVG……
+
 Chromium 把这些计算逻辑封装在 `IntersectionGeometry::ComputeGeometry()` 里。这个方法承担了所有实质性的工作：初始化边界框、应用 margin、执行坐标映射、裁剪交集、判定阈值、计算可见性。从工程角度看，这里是性能瓶颈所在，也是复杂 bug 的温床——坐标空间的转换、缓存的失效条件、各种标志位的组合，任何一个环节出错都会导致难以追踪的视觉问题。
 这篇文章按 `ComputeGeometry()` 的执行流程逐步拆解，看看它如何在三个坐标空间之间腾挪，最终算出那个看似简单的交集比例。
+
 # 坐标系统的三层转换
+
 整个流程涉及三个坐标空间：
 - 本地坐标系：元素自身的坐标系
 - 根容器坐标系：target 几何映射到 root 坐标空间
 - 绝对坐标系：相对于 viewport 或顶级文档
-代码在这三个空间之间不断转换，搞混任何一个都会导致计算错误。`ComputeGeometry` 通过严格的分步转换来管理这个复杂度。aaaa
+
+代码在这三个空间之间不断转换，搞混任何一个都会导致计算错误。`ComputeGeometry` 通过严格的分步转换来管理这个复杂度。
 # 缓存决策
+
 ```cpp
 bool pre_margin_target_rect_is_empty;
 if (ShouldUseCachedRects()) {
@@ -50,13 +55,16 @@ gfx::RectF InitializeTargetRect(const LayoutObject* target, unsigned flags) {
 }
 ```
 不同元素类型有本质不同的布局模型，需要分别处理：
+
 - iframe：`ReplacedContentRect()` 返回 iframe 在父文档中占据的矩形，不是内部文档
 - SVG：有独立坐标系统，`DecoratedBoundingBox()` 包含 paint offset
 - 普通 Box：HTML block/inline-block 用 border box，`kUseOverflowClipEdge` 标志控制是否包含 overflow 内容（如 box-shadow）
 - Inline：不是单一矩形，而是多个 line box 的并集
 - Text 节点：用 `PhysicalLinesBoundingBox()` 作为降级方案
+
 `kUseOverflowClipEdge` 标志容易被忽视，但在特殊场景下会导致交集计算不准确。
 # 分层裁剪
+
 ```cpp
 bool does_intersect =
     ClipToRoot(root_and_target, root_rect_, unclipped_intersection_rect_,
@@ -102,8 +110,11 @@ bool IntersectionGeometry::ClipToRoot(const RootAndTarget& root_and_target,
 }
 ```
 从 target 开始，逐个向上经过所有中间的 scroll container，最后到达 root。每一步都对 target 矩形进行坐标变换并与 clip 边界相交。
+
 `intermediate_scrollers` 列表在构造函数中填充，包含路径上有 scroll margin 的所有可滚动元素。scroll margin 会扩展 scroll container 的 clip 范围，影响交集计算。
+
 `ignore_local_clip_path` 标志容易遗漏。第一次对 target 本身裁剪时需要考虑 target 的 clip-path，但之后每次迭代，当前 target 变成了上一个中间元素，而上一步已经应用过它的 clip-path，所以设置标志忽略它，避免重复应用。
+
 # 坐标映射与 clip
 ```cpp
 unsigned flags = kDefaultVisualRectFlags | kEdgeInclusive |
@@ -138,6 +149,7 @@ return does_intersect;
 ```
 `MapToVisualRectInAncestorSpace()` 处理 transform、filter、clip-path 等视觉效果，然后与 root 的 clip 矩形相交。
 标志位组合决定映射行为：`kUseGeometryMapper` 启用高效几何映射器；`kIgnoreFilters` 和 `kIgnoreLocalClipPath` 在某些情况下跳过特定效果，避免重复应用。使用缓存时直接跳过 `MapToVisualRectInAncestorSpace()` 调用。
+
 # 转换到绝对坐标系
 ```cpp
 gfx::Transform target_to_view_transform = ObjectToViewTransform(*target);
@@ -178,6 +190,7 @@ if (does_intersect) {
 显式 root 直接用 `root_geometry.root_to_view_transform`，这个矩阵在构造函数中预计算好了。
 隐式 root 跨 frame 时更复杂。调用 `MapAncestorToLocal(nullptr)` 映射到最顶层，然后取反向变换。用 `ProjectQuad()` 而不是 `MapRect()` 是为了处理透视变换可能产生的四边形，再用 `BoundingBox()` 转回矩形。
 target 矩形的变换独立于交集矩形——不相交时就不浪费计算交集变换。
+
 # 阈值判定与交集比例
 ```cpp
 if (does_intersect) {

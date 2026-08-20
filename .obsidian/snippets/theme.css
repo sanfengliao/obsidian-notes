@@ -1,0 +1,9 @@
+html, body {
+  --file-line-width: none
+}
+
+
+.cm-lang-mermaid .mermaid svg {
+  width: 100%;
+  height: auto;
+}

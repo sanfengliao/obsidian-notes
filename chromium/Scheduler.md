@@ -372,12 +372,12 @@ sequenceDiagram
     Note over Impl: OnBeginImplFrameIdle()<br/>IDLE<br/>did_prepare_tiles_=false<br/>← 一帧结束，等待下一个 vsync
 ```
 
-> **两次 PrepareTiles 的分工**：
->
-> | | 触发方式 | 时机 | 目的 |
-> |---|---|---|---|
-> | 第一次 | POST_COMMIT 内部直接调用 | Commit 完成后立即 | 为 pending tree tiles 提交 GPU 光栅任务，驱动异步光栅流水线 |
-> | 第二次 | Scheduler `PREPARE_TILES` action | ACTIVATE 完成、DRAW 之后 | 更新 active tree 的 tile 优先级，让 TileManager 知道哪些 tile 需优先用于 Draw |
+**两次 PrepareTiles 的分工**：
+
+|     | 触发方式                             | 时机                  | 目的                                                           |
+| --- | -------------------------------- | ------------------- | ------------------------------------------------------------ |
+| 第一次 | POST_COMMIT 内部直接调用               | Commit 完成后立即        | 为 pending tree tiles 提交 GPU 光栅任务，驱动异步光栅流水线                   |
+| 第二次 | Scheduler `PREPARE_TILES` action | ACTIVATE 完成、DRAW 之后 | 更新 active tree 的 tile 优先级，让 TileManager 知道哪些 tile 需优先用于 Draw |
 
 ## 顺序问题总结（我们重点澄清的点）
 

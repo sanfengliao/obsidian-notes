@@ -4,17 +4,21 @@
     "type": "split",
     "children": [
       {
-        "id": "9dbe0cbbf8455d15",
+        "id": "c4ca4056c02ce6a2",
         "type": "tabs",
         "children": [
           {
-            "id": "28ca5a4293600d95",
+            "id": "97a618c9f3ec0dd6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "未命名.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "新标签页"
+              "title": "未命名"
             }
           }
         ]
@@ -37,7 +41,9 @@
               "type": "file-explorer",
               "state": {
                 "sortOrder": "alphabetical",
-                "autoReveal": false
+                "autoReveal": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
@@ -49,7 +55,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "",
+                "query": "tag:#2b",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -57,7 +63,7 @@
                 "sortOrder": "alphabetical"
               },
               "icon": "lucide-search",
-              "title": "Search"
+              "title": "搜索"
             }
           },
           {
@@ -74,7 +80,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 266.40000000000003
+    "width": 288.5
   },
   "right": {
     "id": "b586263c07a7acd7",
@@ -136,13 +142,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "README.md",
-                "followCursor": false,
-                "showSearch": true,
+                "file": "未命名.md",
+                "followCursor": true,
+                "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "README 的大纲"
+              "title": "大纲"
             }
           }
         ],
@@ -150,8 +156,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 317.5,
-    "collapsed": true
+    "width": 200
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -166,41 +171,46 @@
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "28ca5a4293600d95",
+  "active": "97a618c9f3ec0dd6",
   "lastOpenFiles": [
-    "langchain-langgraph-research/Claude_Agent_SDK_vs_LangChain_LangGraph_技术对比与选型指南.md",
-    "langchain-langgraph-research/LangChain_LangGraph_调研报告~.md",
-    "claude/skill-creator-testing.md",
-    "test1.md",
-    "test.md",
-    "chromium/Scheduler.md",
-    "chromium/Scheduler~.md",
-    "chromium/Untitled.md",
+    "python/01-最基础的工具与环境术语.md",
+    "react-native/00-导读.md",
     "README.md",
-    "test1~.md",
-    "langchain-langgraph-research/1_LangChain_Agents_深度指南.md",
-    "claude/16-plugins.md",
-    "claude/5-configuring-permissions.md",
-    "claude/claude-sdk-guide.md",
-    "claude/15-agent-skills.md",
-    "claude/14-slash-commands.md",
-    "claude/13-subagents.md",
-    "claude/12-custom-tools.md",
-    "claude/11-mcp.md",
-    "claude/10-structured-output.md",
-    "claude/9-file-checkpointing.md",
-    "claude/8-sessions.md",
-    "claude/7-hooks.md",
-    "claude/6-user-input.md",
+    "chromium/blink/core/scroll/滚动动画调度机制详解.md",
+    "chromium/blink/core/scroll/CC 合成线程滚动动画.md",
+    "chromium/blink/core/scroll/Blink CSS Scroll Snap 实现梳理.md",
+    "chromium/blink/core/scroll/AnimateToOffset详细流程分析.md",
+    "chromium/blink/core/paint/Blink Raster 流程深度分析.md",
+    "chromium/blink/core/paint/Blink Paint 流程深度分析.md",
+    "未命名.md",
+    "chromium/blink/LocalFrame&WebLocalFrameImpl&LocalFrameClientImpl类关系.md",
+    "chromium/blink/core/layout/block_layout/BFC Block-Offset 计算机制技术文档.md",
+    "chromium/blink/core/layout/Fragment&Builder&LayoutResult 类关系与调用链.md",
+    "chromium/viewport_scroll_nodes.md",
+    "chromium/untitled-note-1784541735.md",
+    "chromium/Scheduler.md",
+    "untitled-note-1784541258.md",
+    "chromium/cc/animation/ScrollAnimation 从创建到执行的详细流程.md",
+    "chromium/cc/animation/animation模块分析.md",
+    "chromium/cc/input/SnapSelectionStrategy 详解.md",
+    "chromium/cc/input",
+    "chromium/blink/core/scroll/ScrollableOverflowCalculator 与 scrollable overflow 计算.md",
+    "chromium/cc/tree/Chromium 合成器(cc)关键类初始化全流程深度解析.md",
+    "chromium/blink/core/paint/Paint架构图.md",
+    "third_party/blink/renderer/core/dom/element.cc.md",
+    "third_party/blink/renderer/core/dom",
+    "third_party/blink/renderer/core",
+    "third_party/blink/renderer",
+    "third_party/blink",
+    "third_party",
+    "chromium/blink/WPT 测试工具使用指南(testharness&testdriver).md",
+    "chromium/blink/core/layout/block_node/ComputeMinMaxSizes 技术文档.md",
+    "chromium/blink/core/layout/block_node",
+    "chromium/cc/tree",
+    "react-native",
     "assets/2026-02-26-15-02-40.png",
-    "Excalidraw/Drawing 2025-12-20 22.46.13.excalidraw.md",
-    "chromium/blink/Paint架构图.md",
     "langchain",
-    "univer/未命名.base",
-    "chromium/blink/core/layout/flex_layout",
     "assets/2025-12-22-00-40-56.png",
-    "atum/ios",
-    "atum",
     "assets/2025-12-21-10-05-37.png",
     "assets/2025-12-21-03-59-27.png",
     "assets/2025-12-21-03-09-27.png",
@@ -209,11 +219,6 @@
     "assets/2025-12-21-00-36-02.png",
     "assets/2025-12-21-00-28-37.png",
     "assets/2025-12-21-00-28-00.png",
-    "Excalidraw",
-    "chromium/blink/core/layout/block_layout/Untitled.base",
-    "chromium/blink/core/intersection_observer",
-    "Untitled",
-    "github",
     "Untitled.canvas",
     "未命名.canvas"
   ]

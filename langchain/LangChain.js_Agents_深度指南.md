@@ -17,6 +17,7 @@ Agent 运行直到满足停止条件：
 - 达到最大迭代次数
 - 遇到错误
 
+
 ### `createAgent` 与 LangGraph 的关系 ⭐ 重要
 
 **`createAgent` 是 LangGraph 的高度抽象**，本质上是一个预构建的 LangGraph 工作流：
@@ -635,6 +636,8 @@ const beginnerResult = await agent.invoke(
 ## 5. 高级功能
 
 ### 5.1 结构化输出
+
+
 
 强制 Agent 返回特定格式的结构化数据，确保类型安全：
 

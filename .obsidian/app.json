@@ -13,7 +13,7 @@
   "tabSize": 2,
   "propertiesInDocument": "source",
   "livePreview": true,
-  "strictLineBreaks": false,
+  "strictLineBreaks": true,
   "foldIndent": false,
   "showIndentGuide": false,
   "spellcheck": false
